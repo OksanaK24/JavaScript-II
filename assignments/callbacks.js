@@ -70,17 +70,18 @@ let resultmult = multiplyNums(3, 15, multiply);
 console.log(resultmult);
 
 function contains(item, list, cb) {
-//   if(list.includes(item)){
-//     return cb(true)
-//  }
-//  return cb(false)
-  // return cb(list.includes(item));
+  return cb(item, list);
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
 }
 
+function check_contains(item, list){
+  return list.includes(item);
+}
 
-// console.log(contains("yo-yo", items, cb));
+
+console.log(contains("yo-yo", items, check_contains));
+
 
 
 

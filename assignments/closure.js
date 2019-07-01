@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function userID (){
+  let userID1 = "newUser";
+  console.log(`You user ID is ${userID1}`);
 
+  function password(){
+    let password1 = "pa$$word";
+    console.log(`Here is your password ${password1}. Please don't forget it`);
+
+    function controlQuestion(){
+      let controlAnswer1 = "City";
+      console.log(`Nevertheless if you forget your password you always can reset it, but given this answer(${controlAnswer1}) on the Control Question`)
+    }
+    controlQuestion();
+  }
+  password();
+}
+userID();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
